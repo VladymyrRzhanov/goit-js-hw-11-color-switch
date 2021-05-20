@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-size: 24px;
+  background-color: blue;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:first-child {
+  margin-right: 100px;
+}
+
+button:disabled {
+  background-color: rgba(204, 204, 204, 0.6);
+  color: rgba(0, 0, 0, 0.3);
+  cursor: inherit;
+}
