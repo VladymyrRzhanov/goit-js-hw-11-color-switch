@@ -1,0 +1,2 @@
+body{display:flex;justify-content:center;align-items:center;padding-top:100px}button{padding:10px 30px;border-radius:15px;font-size:24px;background-color:#00f;color:#fff;text-transform:uppercase;cursor:pointer}button:first-child{margin-right:100px}button:disabled{background-color:hsla(0,0%,80%,.6);color:rgba(0,0,0,.3);cursor:inherit}
+/*# sourceMappingURL=/goit-js-hw-11-color-switch/style.3ccd3658.css.map */
