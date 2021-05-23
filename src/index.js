@@ -18,14 +18,19 @@ const colorsSwitcher = {
     startColorsSwitcher() {
         this.toggleBtnAttr();
         const max = colors.length - 1;
+        if (this.intervalId!==null) {
+            return;
+        }
         this.intervalId = setInterval(() => {
             const colorsIndex = this.randomIntegerFromInterval(0, max);
+            console.log(colorsIndex)
             document.body.style.backgroundColor = colors[colorsIndex];
         }, 1000);
     },
 
-    stopColorsSwitcher(intervalId) {
+    stopColorsSwitcher() {
         clearInterval(this.intervalId);
+        this.intervalId = null;
         this.toggleBtnAttr();
     },
 
